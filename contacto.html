@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>ANSES+</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="seguinos">Seguinos</li>
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook fa"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com/" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="index"><a href="./index.html">Proyecto ANSES+</a></h1>
+
+
+      <div class="cuadro">
+      <form action="">
+        <!--crear tabla, esta el recuadro, pero falto la tabla, malisimo-->
+        <fieldset>
+          <legend>Contacto</legend>
+
+          <div class="divCuadro">
+            <label class="labelI" for="CUIL">CUIL</label>
+            <input class="divCuadro2"  type="number" id="CUIL:" placeholder="Numeros sin guiones" />
+
+            <label class="labelD" for="Nombre:">Nombre</label>
+            <input class="divCuadro2"  type="text" id="Nombre" placeholder="Nombre de pila" />
+          </div>
+
+          <div class="divCuadro">
+            <label class="labelI" for="Correo:">Correo</label>
+            <input class="divCuadro2" type="email" id="Nombre" placeholder="Solo Gmail" />
+
+            <label class="labelD" for="Nacionalidad:">Nacionalidad</label>
+            <select class="divCuadro2" name="Nacionalidad" id="Nacionalidad">
+              <option value="Argentino">Argentino</option>
+              <option value="Naturalizado">Naturalizado</option>
+              <option value="Permanente">Extranjero con Residencia Permanente</option>
+              <option value="Termporaria">Extranjero con Residencia Temporaria</option>
+            </select>
+          </div>
+
+          <div class="divCuadro">
+            <label class="labelI" for="Ubicacion:">Ubicacion</label>
+            <select class="divCuadro2"  name="Ubicacion" id="Ubicacion">
+              <option value="CABA">CABA</option>
+              <option value="GBA Sur">GBA Sur</option>
+              <option value="GBA Norte">GBA Norte</option>
+              <option value="Gran Buenos Aires">Gran Buenos Aires</option>
+              <option value="Resto del Pais">Resto del Pais</option>
+            </select>
+
+            <label class="labelD" for="Sector:">Seleccion el tipo de tramite</label>
+            <select class="divCuadro2" name="sector" id="sector">
+              <option value="Asignaciones Familiares">Asignaciones familiares</option>
+              <option value="Jubilaciones">Jubilaciones</option>
+              <option value="Prensiones">Prensiones</option>
+              <option value="Obra Social">Obra social</option>
+              <option value="Monotributo Social">Monotributo social</option>
+            </select>
+          </div>
+
+          <label class="TArea" for="Consulta">Ingrese brevemente su consulta</label>
+          <textarea
+            name=""
+            id="Consulta"
+            cols="30"
+            rows="1"
+            placeholder="Nunca brindes datos de tu tarjeta de cobro"
+          ></textarea>
+
+          <div class="Botones2">
+            <input
+              class="BotonesConsulta"
+              type="submit"
+              value="Enviar"
+              aria-roledescription="de 24 a 48 hs"
+            />
+
+            <!--generar condicion que genere un msj que indique que la respuesta tarda 
+                    de 24 a 48hs y que luego al aceptarlo en tenvie al inicio -->
+
+            <input class="BotonesConsulta" type="reset" value="Limpiar" />
+          </div>
+        </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <div>
+        <p>
+          Realiza trámites de ANSES desde tu casa, y si vas a una oficina, no
+          seas salame y lleva todo lo necesario.
+        </p>
+        <section class="foot">
+          <ul>
+            <li class="ansesfooter">
+              <a href="/ANSES+/index.html">Proyecto ANSES+</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="derechos">© 2025 ANSES+</li>
+            <li class="derechos">Todos los derechos reservados</li>
+            <li class="derechos">
+              <a href="./que-es-anses+.html">Qué es ANSES+</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
